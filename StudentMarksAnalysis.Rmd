@@ -1,58 +1,67 @@
 ---
 title: "Synthetic Student Marks Analysis"
-author: "Sunil Kumar Chandaluri"
+author: "Sunil Kumar"
 date: "2026-10-30"
 output: html_document
 ---
 
-> **AI Assistance Declaration:** I used ChatGPT (GPT-6, October 30, 2026) to suggest this document's structure and illustrative R code. Prompts and key responses appear in `AI_Prompts_Appendix.md`. I will independently run, verify, and preview all outputs before submission. I am responsible for the final work.
+> **AI Assistance Declaration:** I used ChatGPT (GPT-6, October 30, 2026) for documentation structure and example chunk formatting. Prompts used: “Suggest Markdown formatting and code block examples for a synthetic student marks analysis”; “Improve section organization and syntax highlighting.” Verification methods: **[enter actual knit, spreadsheet, independent calculation, and self/peer checks]**. All final calculations are done by myself. I am responsible for the accuracy and originality of this work.
 
 # Purpose
 
-This document illustrates how to summarize and visualize a small, **synthetic** set of student marks using base R. It is intended as a documentation example, not an analysis of real students.
+This R Markdown document demonstrates an analysis workflow using **synthetic** marks. It explains the input data, processing steps, and expected output. The learner must review the R code and personally run and verify every calculation.
 
 ## Inputs
 
-The only input is a data frame created in the first chunk. It contains five fictional student IDs and numeric marks out of 100.
+The synthetic dataset has six fictional student IDs and assessment marks on a 0–100 scale. The values are illustrative and are not personal information.
 
-## Step 1: Create Synthetic Data
-
-```{r create-data}
-students <- data.frame(
-  student_id = c("S01", "S02", "S03", "S04", "S05"),
-  mark = c(78, 85, 92, 66, 88)
+```{r input-data}
+marks <- data.frame(
+  student_id = paste0("S", 1:6),
+  score = c(72, 85, 91, 68, 77, 89)
 )
-students
+marks
 ```
 
-## Step 2: Summarize Marks
+## Processing Steps
 
-The following code calculates the mean, median, minimum, and maximum. Run it yourself and verify the results independently.
+The following sections validate the synthetic input, calculate descriptive statistics, and create a chart. The calculations must be run and checked independently by the student.
 
-```{r summary-statistics}
-summary_table <- data.frame(
+## Data Validation
+
+Check the structure and mark range before analyzing.
+
+```{r validation}
+stopifnot(is.numeric(marks$score))
+stopifnot(all(!is.na(marks$score)))
+stopifnot(all(marks$score >= 0 & marks$score <= 100))
+str(marks)
+```
+
+## Summary Statistics
+
+The following code provides a starting point for calculating the mean, median, minimum, and maximum. Run it yourself, then independently verify each result.
+
+```{r summary}
+summary_stats <- data.frame(
   statistic = c("Mean", "Median", "Minimum", "Maximum"),
-  value = c(
-    mean(students$mark),
-    median(students$mark),
-    min(students$mark),
-    max(students$mark)
-  )
+  value = c(mean(marks$score), median(marks$score),
+            min(marks$score), max(marks$score))
 )
-summary_table
+summary_stats
 ```
 
-## Step 3: Visualize Marks
+## Visualization
 
-The bar chart compares the fictional students' marks on a consistent 0–100 scale.
+A base R bar chart displays the fictional students' marks.
 
-```{r marks-chart, fig.width=7, fig.height=4}
+```{r plot, fig.width=7, fig.height=4}
 barplot(
-  height = students$mark,
-  names.arg = students$student_id,
+  marks$score,
+  names.arg = marks$student_id,
   main = "Synthetic Student Marks",
-  xlab = "Student ID",
-  ylab = "Mark (out of 100)",
+  xlab = "Fictional Student ID",
+  ylab = "Score",
   ylim = c(0, 100),
   col = "steelblue"
 )
@@ -60,17 +69,21 @@ barplot(
 
 ## Outputs
 
-1. A printed data frame of synthetic marks.
-2. A table containing four descriptive statistics.
-3. A bar chart comparing marks by fictional student ID.
+- Printed synthetic input table.
+- Printed summary statistics table.
+- Bar chart of marks by fictional student ID.
 
-## Interpretation and Limitations
+## Manual Verification Log
 
-This example demonstrates a documentation workflow and basic descriptive statistics. The dataset is too small and artificial for conclusions about real educational performance. Check all calculated values before writing a final interpretation.
+Complete this section **after** you run the code and review the rendered output.
 
-## Verification Notes
+| Check | Method | Your result / notes |
+| --- | --- | --- |
+| Primary calculation | Recreate summary calculations in Google Sheets | TODO |
+| Independent cross-check | Recalculate with another method (e.g., manual arithmetic) | TODO |
+| Self/peer spot-check | Inspect two input values and the plot labels | TODO |
+| R Markdown preview | Knit in RStudio or Posit Cloud | TODO |
 
-- [ ] Run each code chunk without errors.
-- [ ] Independently verify each statistic using a calculator or separate R expressions.
-- [ ] Knit to HTML and check headings, code blocks, tables, and chart.
-- [ ] Record any corrections after previewing.
+## Limitations
+
+The dataset is synthetic and very small. The analysis is illustrative, not suitable for generalizing about real student performance.

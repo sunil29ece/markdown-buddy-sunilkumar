@@ -1,32 +1,17 @@
-# Reflection — BDA400 Assignment 1
+> **AI Assistance Declaration:** I used ChatGPT (GPT-6, October 30–31, 2026) for suggested reflection structure and wording. Prompts used: see `AI_Prompts_Appendix.md`. Verification methods: **[record your actual review]**. All final calculations are done by myself. I am responsible for the accuracy and originality of this work.
 
-> **AI Assistance Declaration:** I used ChatGPT (GPT-6, October 30, 2026) to propose reflection themes and draft wording. The exact three reflection questions were not included in the supplied assignment PDF. I will replace the placeholders with the actual questions, revise these answers to reflect my own experience, and verify the final work. I am responsible for its accuracy and originality.
+# Reflection Questions — Draft Responses
 
-**Important:** The assignment mentions three reflection questions but does not reproduce their wording. The following are **provisional prompts and draft responses**, not confirmed answers to the course's exact questions.
+**Important:** The assignment instructions refer to three reflection questions but do **not** include their exact wording. These are provisional questions, **not confirmed LMS questions**. Replace them with the three exact questions and revise the answers to reflect your own experience before submitting.
 
-## Reflection Question 1 — [Insert exact question from LMS]
+## 1. How did AI help with the documentation process? (Provisional)
 
-**Draft theme: How did AI help with documentation?**
+ChatGPT suggested an organized README with an overview, setup instructions, example usage, expected outputs, and a disclosure section. It also suggested headings and code-chunk formatting for R Markdown. These suggestions gave me a starting structure to review rather than a finished assignment to accept without checking. **[Add one specific change you made yourself.]**
 
-ChatGPT helped me organize the README into clear sections such as Overview, Requirements, Installation, Example Usage, and Validation. It also suggested a consistent structure for documenting R code. I still need to compare these suggestions against a real R project's README and make any changes that improve clarity.
+## 2. What were the limitations and ethical considerations of using AI? (Provisional)
 
-## Reflection Question 2 — [Insert exact question from LMS]
+AI-generated documentation can appear polished even when instructions, code, and calculations have not been verified. It may also describe a preview or test as completed when it has not happened. I therefore need to check the code and Markdown in the relevant applications and avoid uploading personal data. This project uses fictional student identifiers and synthetic scores. **[Add a limitation you personally noticed.]**
 
-**Draft theme: What are the limitations of AI-generated documentation?**
+## 3. How did you verify and improve the documentation? (Provisional)
 
-AI can produce plausible-looking instructions that have not been executed or checked. For example, an R Markdown document may contain code that appears correct but fails when knitted, or it may describe outputs inaccurately. I should run the code, independently check calculations, inspect the rendered document, and correct any errors before submission.
-
-## Reflection Question 3 — [Insert exact question from LMS]
-
-**Draft theme: How will you use AI ethically?**
-
-I should disclose the AI tool, date, prompts, and assistance received. I should not present unverified AI-generated text or calculations as independently completed work. Using synthetic data also avoids exposing real student information. The final document should reflect my own review, corrections, and understanding.
-
-## My Actual Verification and Revisions
-
-Complete this section **after** previewing and testing the repository:
-
-- README preview date and findings: [To complete]
-- R Markdown knit date and findings: [To complete]
-- Independent calculation check: [To complete]
-- Specific wording or formatting changes I made: [To complete]
+**[Complete only after doing the work.]** I compared the README structure with **[repository/link]**, previewed the README in **[GitHub/date]**, and changed **[specific formatting or clarity issue]**. I knitted the R Markdown report in **[RStudio/Posit Cloud/date]** and observed **[actual result]**. I checked the summary calculations in Google Sheets, independently cross-checked them using **[method]**, and performed **[self/peer spot-check]**. These steps showed why AI suggestions must be independently verified.
