@@ -1,36 +1,52 @@
-# AI Prompts and Key Responses
+> **AI Assistance Declaration:** I used ChatGPT (GPT-6, October 30–31, 2026) for documentation drafting, formatting suggestions, and a rubric-based review. Prompts used: recorded below. Verification methods: **[enter checks actually performed]**. All final calculations are done by myself. I am responsible for the accuracy and originality of this work.
 
-> **AI Assistance Declaration:** I used OpenAI ChatGPT (GPT-6, October 30, 2026) to help draft and organize documentation for this synthetic R project. I must verify all outputs and calculations myself and am responsible for the submitted work.
+# Appendix: AI Prompts, Key Responses, and Verification
 
-## AI Tool
+**Tool:** ChatGPT (GPT-6)  
+**Dates:** October 30–31, 2026  
+**Use:** Structure, drafting, Markdown formatting, R Markdown documentation, reflection drafting, and rubric review. No AI-generated calculation should be treated as verified.
 
-- Tool: OpenAI ChatGPT
-- Model: GPT-6
-- Date: October 30, 2026
+## Prompt Record
 
-## Actual User Prompts in This Conversation
+The following includes **exact requests present in this conversation** and **assignment-suggested prompts**. Do not represent assignment-suggested prompts as personally entered unless you actually used them.
 
-1. “Include the following in your GitHub repository: README.md ... One .Rmd file ... Reflection.md ...” (assignment requirements supplied).
-2. “Analyze what makes a strong project README. Generate a high-quality, Markdown-formatted README ... Document a single R script ... Validate your outputs ... Reflect on how AI tools supported your process ...”
-3. “provide github repository code”
+| Status | Prompt or request | Key response / outcome |
+| --- | --- | --- |
+| Used in conversation | “provide github repository code” | A draft repository with README, Rmd, reflections, and appendix was prepared. |
+| Used in conversation | “provide code matches” (within the assignment instructions) | The draft was revised to emphasize declarations, synthetic data, and verification requirements. |
+| Used in conversation | “yes” (reply to rubric review offer) | A rubric-based review and documentation improvements were undertaken. |
+| Assignment seed prompt; use and record if entered | “Explain what sections a good GitHub README for an R data analysis project should include.” | Suggested sections: overview, requirements, installation, usage, and license. |
+| Assignment refinement prompt; use and record if entered | “Revise the sections list so it’s concise and uses Markdown headers and bullet formatting.” | Consistent headings and concise lists. |
+| Assignment critique prompt; use and record if entered | “Check the Markdown syntax for correctness and readability.” | Review heading levels, fenced code blocks, and tables. |
+| Assignment README refinement; use and record if entered | “Add sections for Installation, Example Code, and License. Keep tone concise and professional.” | These sections were included in the README draft. |
+| Assignment R Markdown critique; use and record if entered | “Is the Markdown consistent with RMarkdown best practices?” | Suggested YAML front matter, named chunks, and clear purpose/input/output sections. |
 
-## Key AI Responses and Assistance
+**Additional prompt details:** The user also provided the full assignment instructions and rubric in this conversation. Add any further prompts you actually enter and the responses you receive; do not invent a history of interactions.
 
-- Proposed a synthetic student marks analysis example to avoid using real data.
-- Structured `README.md` with project purpose, requirements, setup, example usage, outputs, validation, and disclosure.
-- Drafted an R Markdown document with synthetic data creation, summary statistics, and a bar chart.
-- Drafted three provisional reflection themes because the exact questions were absent from the provided PDF.
-- Added a validation checklist to guide the student's independent review.
+## AI-Assisted Draft Refinements
 
-## Verification and Refinement Record
+The latest draft improves the original documentation by:
 
-The files are AI-assisted **drafts**. The student must complete the following before submission:
+1. Adding an explicit HTML rendering command and explaining the placeholder GitHub URL.
+2. Explaining the synthetic inputs, expected outputs, and base R dependency.
+3. Separating AI-assisted draft improvements from **student-performed** verification and edits.
+4. Clearly labeling the three reflection questions as provisional.
 
-1. Preview README and appendix Markdown on GitHub.
-2. Knit the R Markdown file in RStudio or Posit Cloud.
-3. Independently check all statistics and chart labels.
-4. Compare the README to an established R repository.
-5. Replace provisional reflection headings with the exact questions from the LMS.
-6. Record actual edits, issues found, and corrections made.
+These are **AI-assisted draft revisions**, not evidence that the student personally reviewed or tested the repository.
 
-Do not mark these activities as completed unless they were actually performed.
+## Verification and Refinement Log — Complete Yourself
+
+| Requirement | Your evidence / observation |
+| --- | --- |
+| GitHub README comparison | **[Repository URL; two observations]** |
+| GitHub Markdown preview | **[Date; what rendered correctly; any issue corrected]** |
+| R Markdown knit | **[Date, application, success/failure, changes]** |
+| Primary calculation in Google Sheets | **[Formula and your calculated results]** |
+| Independent cross-check | **[Independent method and results]** |
+| Self/peer spot-check | **[Two values/labels checked and observations]** |
+| Personal refinement 1 | **[Before → after; why]** |
+| Personal refinement 2 | **[Before → after; why]** |
+
+## Privacy and Academic Integrity
+
+Only synthetic data is used. The student is responsible for all final calculations, verification, reflection answers, and submission. Do not claim that a check was performed unless it was actually completed.
